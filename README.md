@@ -5,7 +5,7 @@
 3) Pressione o play
 
 #### Aviso:
-Implementações futuras serão feitas, como;
+Implementações futuras serão feitas, como:
 
  - Tempo do arquivo
  - Remoção do flicker
