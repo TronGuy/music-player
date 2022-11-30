@@ -1,0 +1,259 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+
+}
+
+html,body{
+
+    height: 100%;
+    transition: background-image 1s ease-in-out;
+}
+
+body{
+
+background-image: url('https://media.tenor.com/wj7l2lSJWnkAAAAd/castle-thunder.gif');
+background-repeat: no-repeat;
+background-size: cover;
+transition: background-image 1s ease-in-out;
+}
+.label {
+
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+    text-decoration-thickness: 3px;
+}
+
+.label:hover{
+
+    cursor: pointer;
+    color:goldenrod;
+
+}
+
+.icons{
+
+    margin-bottom: 10px;
+    color:white;
+    text-align: center;
+
+}
+
+
+
+.title{
+
+    color:white;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase ;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.capa{
+
+
+    width: 300px;
+    height: 300px;
+    
+}
+
+progress{
+    margin: 15px 0;
+    width: 50vw;
+    border-radius: 100px;
+
+}
+ progress::-moz-progress-bar{
+    border-radius: 100px;
+    background:linear-gradient(20deg, rgb(54, 18, 54),#301c41);
+    }
+
+ progress::-webkit-progress-bar{
+        border-radius: 100px;
+    background-color: red;
+
+    }
+
+
+.buttons{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.play-change{
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    border-radius: 100px;
+    background:#301c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in 250ms;
+}
+
+.play-change:hover{
+    cursor:pointer;
+    background-color: #1c021b ;
+    
+}
+
+
+
+.play-btn{
+    
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    border-radius: 100px;
+    background:#301c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in 250ms;
+
+}
+
+.play-btn:hover{
+    cursor:pointer;
+    background-color: #1c021b ;
+}
+
+.play{
+
+    border:1px solid red;
+    border-style: solid;
+    top: 15%;
+    margin-left: 10px;
+    border-width: 25px 0 30px 40px;
+    border-color: green red purple white;
+    position: absolute;    
+    transition: ease-in 500ms;
+}
+
+
+.play{
+
+    border-color: transparent transparent transparent white;
+    
+}
+
+.play:active{
+
+    animation: play 1s;
+    cursor: pointer;
+}
+
+
+.next{
+
+
+    border-style: solid;
+    top: 15%;
+    margin-right: 5px;
+    border-width: 25px 0 30px 40px;
+    border-color: green red purple white;
+    position: absolute;
+}
+
+
+.next{
+
+    border-color: transparent transparent transparent white;
+}
+
+.next1{
+
+    border-style: solid;
+    top: 15%;
+    margin-left: 10px;
+    border-width: 25px 0 30px 40px;
+    border-color: green red purple white;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.next1{
+
+    border-color: transparent transparent transparent white;
+}
+
+
+
+
+.previous{
+
+
+    border-style: solid;
+    top: 15%;
+    margin-right: 30px;
+    border-width: 25px 0 30px 40px;
+    border-color: green red purple white;
+    position: absolute;
+}
+
+.previous{
+
+    border-color: transparent transparent transparent white;
+    transform: rotate(-180deg);
+}
+
+.previous1{
+
+    border-style: solid;
+    top: 15%;
+    margin-right: 20px;
+    border-width: 25px 0 30px 40px;
+    border-color: green red purple white;
+    position: absolute;
+    margin-left: 30px;;
+}
+
+.previous1{
+
+    border-color: transparent transparent transparent white;
+    transform: rotate(-180deg);
+}
+
+.pausesymbol{
+
+    border-style: solid;
+    border-width: 30px 30px 30px 30px;
+    border-color: red green gold goldenrod;
+    transition: ease-in 400ms;
+    
+}
+
+
+.pausesymbol{
+
+    border-color: transparent white;
+    border-width: 25px 25px;
+}
